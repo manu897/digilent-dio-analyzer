@@ -24,11 +24,11 @@ def main():
                 if toggle_count == 1:
                     last_toggle_time = current_time
 
-                if toggle_count >= 3:
+                if toggle_count >= 6:
                     time_diff = current_time - last_toggle_time
                     if time_diff <= 0.06:  # 20 ms * 3 = 60 ms
-                        log_event(f"Three toggles detected within 20 ms intervals: {toggle_times[-3:]}")
-                    toggle_count = 0  # Reset after three toggles
+                        log_event(f"Six toggles detected within 20 ms intervals: {toggle_times[-6:]}")
+                    toggle_count = 0  # Reset after six toggles
 
             heap_monitor.log_heap_size()
             time.sleep(0.01)  # Sleep to prevent busy waiting
