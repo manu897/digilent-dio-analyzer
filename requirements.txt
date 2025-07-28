@@ -1,0 +1,4 @@
+digilent-dio-analyzer==1.0.0
+digilent-dio==1.0.0
+numpy==1.21.0
+pytest==6.2.4
