@@ -1,4 +1,17 @@
-digilent-dio-analyzer==1.0.0
-digilent-dio==1.0.0
-numpy==1.21.0
-pytest==6.2.4
+# Digilent WaveForms SDK
+pydwf>=1.1.19
+
+# System monitoring
+psutil>=5.8.0
+
+# Data processing and analysis
+numpy>=1.21.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+
+# Testing
+pytest>=6.2.4
+
+# Optional: For advanced signal processing
+pandas>=1.3.0
+plotly>=5.0.0
